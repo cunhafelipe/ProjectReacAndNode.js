@@ -3,7 +3,7 @@ const User = require("../models/userModel.js");
 const UserController = {
   async findUsers(request, response) {
     try {
-      const user = await User.findOne();
+      const user = await User.find();
       response.json(user);
     } catch (error) {
       console.log(error);
