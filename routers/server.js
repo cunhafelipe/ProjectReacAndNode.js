@@ -7,6 +7,8 @@ server.use(express.urlencoded({ extended: true }));
 
 const PORT = 3000;
 
+server.use("/", require("./user.js"));
+
 connectDataBase()
   .then(() => {
     server.listen(PORT, () => {
