@@ -21,7 +21,7 @@ const UserController = {
       const isEmailExists = await User.findOne({ email: user.email });
 
       if (isEmailExists) {
-        response.satus(400).send("E-mail já criado");
+        response.status(400).send("E-mail já criado");
       }
 
       if (user.password.length < 7) {
