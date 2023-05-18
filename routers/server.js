@@ -1,11 +1,15 @@
 const express = require("express");
 const server = express();
+const cors = require("cors");
+
 const connectDataBase = require("../database/connect.js");
 
 server.use(express.json());
 server.use(express.urlencoded({ extended: true }));
 
 const PORT = 3000;
+
+server.use(cors());
 
 server.use("/", require("./user.js"));
 
