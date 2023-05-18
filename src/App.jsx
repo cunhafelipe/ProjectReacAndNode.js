@@ -1,5 +1,11 @@
+import TelaLogin from "./TelaLogin.jsx";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <TelaLogin />
+    </>
+  );
 }
 
 export default App;

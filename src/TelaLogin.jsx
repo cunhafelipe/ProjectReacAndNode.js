@@ -1,3 +1,13 @@
+import styled from "styled-components";
 import "./css/TelaLogin.css";
 
-function Login() {}
+function TelaLogin() {
+  return (
+    <>
+      <h1>Felipe</h1>
+      <p>Olá</p>
+    </>
+  );
+}
+
+export default TelaLogin;
