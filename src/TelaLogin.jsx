@@ -1,5 +1,33 @@
+import { useState } from "react";
 import styled from "styled-components";
 import "./css/TelaLogin.css";
+
+function TelaLogin() {
+  return (
+    <>
+      <Form>
+        <Fieldset>
+          <Legend>Login</Legend>
+          <DivEmail>
+            <LabelEmail htmlFor="email">E-mail</LabelEmail>
+            <InputEmail
+              type="email"
+              id="email"
+              placeholder="example@example.com"
+            />
+          </DivEmail>
+          <DivPassword>
+            <LabelPassword htmlFor="" id="passoword">
+              Password
+            </LabelPassword>
+            <InputPassword type="password" placeholder="8 character minimum" />
+          </DivPassword>
+        </Fieldset>
+        <Button type="submit">Login</Button>
+      </Form>
+    </>
+  );
+}
 
 const Form = styled.form`
   max-width: 400px;
@@ -99,26 +127,5 @@ const Button = styled.button`
     transition: 0.7s;
   }
 `;
-
-function TelaLogin() {
-  return (
-    <>
-      <Form action="">
-        <Fieldset>
-          <Legend>Login</Legend>
-          <DivEmail>
-            <LabelEmail htmlFor="">E-mail</LabelEmail>
-            <InputEmail type="email" placeholder="example@example.com" />
-          </DivEmail>
-          <DivPassword>
-            <LabelPassword htmlFor="">Password</LabelPassword>
-            <InputPassword type="password" placeholder="8 character minimum" />
-          </DivPassword>
-        </Fieldset>
-        <Button>Login</Button>
-      </Form>
-    </>
-  );
-}
 
 export default TelaLogin;
