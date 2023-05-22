@@ -12,6 +12,7 @@ function App() {
         setMessage(data.message);
       });
   }, []);
+
   return (
     <>
       <TelaLogin />
